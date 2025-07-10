@@ -48,21 +48,6 @@ Each agent can use specific **tools or APIs** (Skyscanner, Booking.com, Airbnb, 
   - 🍽️ Yelp or Google Maps for food recommendations
 
 ---
-## 📂 Project Structure
-travel_planner_ai/
-├── README.md
-├── pyproject.toml
-├── src/
-│   └── travel_planner/
-│       ├── config/
-│       │   ├── agents.yaml
-│       │   └── tasks.yaml
-│       ├── tools/
-│       │   ├── flight_search_tool.py
-│       │   ├── hotel_search_tool.py
-│       │   └── food_search_tool.py
-│       ├── crew.py
-│       └── main.py
 
 ## 🧩 Features To Implement
 - ✅ Sequential & interactive planning
