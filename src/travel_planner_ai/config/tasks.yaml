@@ -1,0 +1,43 @@
+flight_search_task:
+  description: >
+    Research the best flight options for the user's trip. Consider budget, layovers, airlines, and timing.
+    Return the top 3 options and ask the user to select one before proceeding.
+    Location: {location}
+    Dates: {date_range}
+    Preferences: {preferences}
+  expected_output: >
+    A list of 3 flight options with details (price, airline, times, layovers), and a question prompting user to select one.
+
+accommodation_search_task:
+  description: >
+    Find the most suitable accommodations for the selected trip.
+    Present 3-5 high-quality options with pros/cons and ask for selection.
+    Location: {location}
+    Dates: {date_range}
+    Budget: {budget}
+    Preferences: {preferences}
+  expected_output: >
+    A shortlist of accommodation options with descriptions, and a prompt for user feedback.
+
+activity_planning_task:
+  description: >
+    Based on the destination and travel style, create a full day-by-day activity plan.
+    Include must-see attractions and hidden gems.
+    Each day should have a structure (morning, afternoon, evening).
+    Travel Style: {preferences}
+  expected_output: >
+    A multi-day itinerary broken down by time blocks with place names and descriptions.
+
+restaurant_recommendation_task:
+  description: >
+    Suggest great places to eat for each day of the trip, including breakfast/lunch/dinner.
+    Match recommendations to location, timing, and user preferences.
+  expected_output: >
+    A list of restaurant options per day, categorized by meal, with style of food and short description.
+
+compile_itinerary_task:
+  description: >
+    Gather all approved trip elements: flight, hotel, activities, and restaurant recommendations.
+    Format them as a complete markdown travel itinerary.
+  expected_output: >
+    A markdown file structured by days with flight, stay, activities, and meals per day.
